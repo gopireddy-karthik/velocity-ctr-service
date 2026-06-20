@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
