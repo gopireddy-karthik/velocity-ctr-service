@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ctr-service:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8000
+      - LOG_LEVEL=info
+    volumes:
+      - ./ctr_model.pkl:/app/ctr_model.pkl:ro
+    restart: unless-stopped
